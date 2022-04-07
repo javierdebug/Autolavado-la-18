@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    background-color: #e0f3eb;
+    color: #1e3932;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#head {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 2%; */
+    background-image: url(images/car-wash-3960877_1920.jpg);
+    width: 100%;
+    /* min-height: 40vh; */
+    min-height: 650px;
+    
+    background-size: max(100%, 100vh);
+    /* background-position-x: 0px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color:rgb(255, 255, 255);
+    /* line-height: 5rem; */
+    /* font-size: 1.1em; */
+    /* margin: 10px; */
+}
+
+#header-text {
+    font-size: clamp(2vh, 2.2vw, 1.5rem);
+    background-color: rgba(128, 128, 128, 0.71);
+    color: #daece5;
+    border-radius: 10px;
+    padding: 3%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    line-height: 1.5;
+    text-align: center;
+    width: 80vw;
+}
+
+@media (max-width: 767px) {
+    header {
+        min-height: 320px;
+        padding-top: 2vh;
+    }
+    
+    #head {
+        display: block;
+        min-height: 40px;
+        background-color: #1e3932;
+        /* background-color: #7ce4c3; */
+        width: 100%;
+        text-align: center;
+        position: sticky;
+        top: 0;
+    }
+}
+
+article {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: rgb(78, 78, 78); */
+    /* color: rgb(199, 194, 194); */
+    color: darkslategray;
+    line-height: 2.0rem;
+    width: 75vw;
+    padding: 60px 5px 60px; 
+    /* text-align: justify; */
+}
+
+#servicios {
+    margin: 20px;
+}
+
+#map {
+    min-height: 400px;
+    width: 100%;    
+}
+
+#ending {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    
+    width: 75vw;
+    padding: 50px 5px;
+
+    font-size: clamp(2vh, 2.2vw, 1.1rem);
+
+}
+
+#ending > #offer, #Tienda {
+    padding: 0 20px;
+}
+
+#horario {
+    /* margin-top: 10px; */
+    text-align: center;
+}
+
+footer {
+    background-color: #1e3932;
+    color: #e0f3eb;
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: #e0f3eb;
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 150px;
+}
+
+.footer-dir {
+    margin-top: 2vh;
+}
+
+.btn {
+    background-color: #008248;
+    color: #e0f3eb;
+    /* background-color: #7ce4c3;
+    color: #1e3932; */
+    border-radius: 25px;
+    padding: 15px;
+    margin: 5vh 0 1vh;
+    cursor: pointer;
+    border: 2px solid #008248;
+    font-size: 0.9rem;
+}
+
